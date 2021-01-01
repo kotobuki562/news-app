@@ -18,10 +18,10 @@ const initialState = {
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  const [state, deispach] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   const fetchStories = async (url) => {
-    dispatchEvent({ type: "SET_LOADING" });
+    dispatch({ type: "SET_LOADING" });
   };
 
   useEffect(() => {
