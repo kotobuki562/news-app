@@ -2,6 +2,7 @@ import React from "react";
 import { useGlobalContext } from "./context";
 
 const Buttons = () => {
+  // dispatch
   const { isLoading, page, nbPages, handlePage } = useGlobalContext();
 
   return (
